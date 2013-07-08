@@ -1,0 +1,10 @@
+table{
+	margin:auto;
+	border-style:solid;
+}
+td{
+	width:50px;
+	border-width: 1px;
+	border-style:solid;
+	text-align: center;
+}
