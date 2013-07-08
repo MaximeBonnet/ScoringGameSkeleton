@@ -6,8 +6,8 @@ public class Crane : MonoBehaviour {
 	GameObject target;
 	public float speed=1;
 	public GameObject skin;
-	enum IAType{simple, circle};
-	IAType IA;
+	public enum IAType{simple, circle};
+	public IAType IA;
 	// Use this for initialization
 	void Start () {
 		target=GameObject.Find("Player");
@@ -21,6 +21,7 @@ public class Crane : MonoBehaviour {
 				break;
 			default:
 				Simple();
+				break;
 		}
 	}
 	

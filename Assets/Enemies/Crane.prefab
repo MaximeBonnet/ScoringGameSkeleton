@@ -1406,6 +1406,7 @@ MonoBehaviour:
   m_Name: 
   speed: 5
   skin: {fileID: 100000}
+  IA: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
