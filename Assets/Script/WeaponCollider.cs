@@ -28,7 +28,7 @@ public class WeaponCollider : MonoBehaviour {
 	
 	public void StartHit(){
 		isHitting=true;
-
+		audio.Play();
 		for(int i=0;i<collidedCharacters.Count;i++){
 			Collider other=collidedCharacters[i];
 			if(other!=null){

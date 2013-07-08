@@ -1407,6 +1407,7 @@ MonoBehaviour:
   speed: 5
   skin: {fileID: 100000}
   IA: 0
+  particles: []
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1418,7 +1419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86714cac94e71844a96b7cdb00d5f558, type: 3}
   m_Name: 
   pv: 10
-  hitFeedBack: {fileID: 100010, guid: 48d5349e2f923244bab78edaa06a532b, type: 2}
+  hitFeedBack: {fileID: 100000, guid: 206e310220b454148918124a245a366a, type: 2}
   score: 10
 --- !u!137 &13700000
 SkinnedMeshRenderer:

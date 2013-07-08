@@ -5,6 +5,7 @@ public class Player : MonoBehaviour {
 
 	MoveCharacter moveCharacter;
 	public WeaponCollider weapon;
+	public MeleeWeaponTrail trail;
 	public Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -29,9 +30,10 @@ public class Player : MonoBehaviour {
 			}else{
 				anim.SetBool("hit", false);
 			}
-			
+			trail.Emit=false;
 		}else{
 			weapon.isHitting=true;
+			trail.Emit=true;
 		}
 				
 	}

@@ -112,7 +112,6 @@ public class NotePlayer : MonoBehaviour {
 	
 	void GetNextRythme(){
 		int rythme = Random.Range(0,3/*4*/);
-		Debug.Log("nextplay="+rythme);
 		switch (rythme){
 			case 0: //blanche
 				timeNextPlay=Time.time+tempoSec*2;
@@ -137,7 +136,6 @@ public class NotePlayer : MonoBehaviour {
 		Note noteToPlay = GetNote(currentMode);
 		
 		
-		Debug.Log(noteToPlay.name);
 		
 		nextToLastNotePlayed = lastNotePlayed;
 		lastNotePlayed = noteToPlay;
@@ -162,7 +160,6 @@ public class NotePlayer : MonoBehaviour {
 		{
 			if (lastNotePlayed == loadout[j])
 			{
-				Debug.Log("noteChoices"+j);
 				noteChoices = modeToUse.logic[j];
 				found = true;
 				
@@ -172,7 +169,6 @@ public class NotePlayer : MonoBehaviour {
 		
 		if (!found)
 		{
-			Debug.Log("meh");
 			noteChoices = modeToUse.logic[6];
 		}
 		
@@ -181,7 +177,6 @@ public class NotePlayer : MonoBehaviour {
 		int randomIndex = Random.Range(0, noteChoices.Count -1);
 		
 		int choiceIndex = noteChoices[randomIndex];// - 1;
-		Debug.Log ("choice index "+choiceIndex);
 		Note returnNote = loadout[choiceIndex];
 		
 		if (returnNote == nextToLastNotePlayed)

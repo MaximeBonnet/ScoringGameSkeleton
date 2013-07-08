@@ -48,6 +48,7 @@ public class MoveCharacter : MonoBehaviour {
 		anim.SetFloat("move", x);
 	
 		if (groundDetecion.IsGrouded()){
+			anim.SetBool("jump", false);
 			if(jump){
 				Jump();
 			}else{
@@ -80,7 +81,7 @@ public class MoveCharacter : MonoBehaviour {
 	
 	public void Jump(){
 		if(groundDetecion.IsGrouded()){
-//			anim.SetBool("jump", true);
+			anim.SetBool("jump", true);
 			jumpForce = Vector3.up*jumpSpeed;
 		}else{
 //			anim.SetBool("jump", false);

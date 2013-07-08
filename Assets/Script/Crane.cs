@@ -9,6 +9,7 @@ public class Crane : MonoBehaviour {
 	public enum IAType{simple, circle};
 	public IAType IA;
 	
+	public ParticleEmitter[] particles;
 	
 	int circleDir=1;
 	// Use this for initialization
@@ -56,5 +57,12 @@ public class Crane : MonoBehaviour {
 	void CharacterLookAt(Vector3 pos){
 		pos+=skin.transform.position;
 		skin.transform.LookAt(pos);
+	}
+	void OnDestroy(){
+//		ParticleEmitter[] particles= GetComponentsInChildren<ParticleEmitter>();	
+		foreach(ParticleEmitter particle in particles){
+			particle.emit=false;
+			particle.transform.parent=null;
+		}
 	}
 }
