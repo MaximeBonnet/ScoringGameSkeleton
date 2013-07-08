@@ -44,7 +44,6 @@ public class MoveCharacter : MonoBehaviour {
 	//UpdateMove?
 	public void UpdateMoveManager(float x, bool jump) {
 		
-		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);
 		moveDirection = new Vector3(x, 0, 0).normalized;
 		anim.SetFloat("move", x);
 	
@@ -71,8 +70,11 @@ public class MoveCharacter : MonoBehaviour {
 		if(force.magnitude<forceMin)
 			force=Vector3.zero;
 		
-		CharacterLookAt(moveDirection);
-		
+		AnimatorStateInfo currentBaseState=anim.GetCurrentAnimatorStateInfo(1);
+				
+		if(currentBaseState.nameHash != Animator.StringToHash("Hit.hit")){
+			CharacterLookAt(moveDirection);
+		}
 //		anim.SetFloat(MekanimVar.moveFront, moveDirection.z);
 	}
 	
