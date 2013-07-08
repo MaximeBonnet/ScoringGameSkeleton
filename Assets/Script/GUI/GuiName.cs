@@ -6,7 +6,6 @@ public class GuiName : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        
 
 
 
