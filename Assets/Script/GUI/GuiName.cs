@@ -5,6 +5,11 @@ public class GuiName : MonoBehaviour {
 	public string name="Bouya";
 	// Use this for initialization
 	void Start () {
+
+        
+
+
+
 		name=PlayerPrefs.GetString("name");
 		if(name==""){
 			name="Enter a name";	
