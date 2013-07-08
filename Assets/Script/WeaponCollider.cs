@@ -11,9 +11,7 @@ public class WeaponCollider : MonoBehaviour {
 	
 	public List<Collider> collidedCharacters=new List<Collider>();
 	
-	
-	bool isCurrentAttackSuccess=false;
-	
+		
 	void OnTriggerEnter(Collider other){
 		
 		collidedCharacters.Add(other);
@@ -30,7 +28,6 @@ public class WeaponCollider : MonoBehaviour {
 	
 	public void StartHit(){
 		isHitting=true;
-		isCurrentAttackSuccess=false;
 
 		for(int i=0;i<collidedCharacters.Count;i++){
 			Collider other=collidedCharacters[i];
@@ -50,9 +47,7 @@ public class WeaponCollider : MonoBehaviour {
 				*/
 		if(other.gameObject.layer!=gameObject.layer){
 //			Debug.Log("Hit "+other.name);	
-			if(/*other.gameObject.GetComponent<CharacterManager>().TakeDamage(currentAttack, transform) &&*/ !isCurrentAttackSuccess){
-				other.gameObject.SendMessage("Hit", damage);
-			}
+				other.gameObject.SendMessage("Hit", damage,SendMessageOptions.DontRequireReceiver);
 		}
 	}
 	
