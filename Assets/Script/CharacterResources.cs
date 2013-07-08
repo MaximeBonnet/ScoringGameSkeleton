@@ -12,4 +12,13 @@ public class CharacterResources : MonoBehaviour {
 		}
 			
 	}
+
+    void LifeUp()
+    {
+        pv++;
+    }
+    void LifeDown()
+    {
+        pv--;
+    }
 }
