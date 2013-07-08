@@ -15,11 +15,25 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {		
 		moveCharacter.UpdateMoveManager(Input.GetAxis("Horizontal"),Input.GetButtonDown("Jump"));
-		if(Input.GetButtonDown("Fire1")){
-			anim.SetBool("hit", true);
+
+		
+		AnimatorStateInfo currentBaseState=anim.GetCurrentAnimatorStateInfo(1);
+		
+		Debug.Log(currentBaseState.nameHash != Animator.StringToHash("Hit.hit"));
+		
+		if(currentBaseState.nameHash != Animator.StringToHash("Hit.hit")){
+			
+			weapon.isHitting=false;
+			if(Input.GetButtonDown("Fire1")){
+				anim.SetBool("hit", true);
+				weapon.StartHit();
+			}else{
+				anim.SetBool("hit", false);
+			}
 			
 		}else{
-			anim.SetBool("hit", false);
+			weapon.isHitting=true;
 		}
+				
 	}
 }

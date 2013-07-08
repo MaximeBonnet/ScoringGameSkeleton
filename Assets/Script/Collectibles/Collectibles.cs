@@ -13,6 +13,10 @@ public class Collectibles : MonoBehaviour {
 
     public TypeResources typeResource;
 
+    private iTweenPath path;
+
+    public iTween.LoopType loopType;
+    public float speed;
 
 
 	// Use this for initialization
@@ -22,7 +26,10 @@ public class Collectibles : MonoBehaviour {
         myCollider.size = new Vector3(myCollider.size.x, myCollider.size.y, 100f);
         this.rigidbody.useGravity = false;
         this.rigidbody.isKinematic = true;
-
+        if (path = this.GetComponent<iTweenPath>())
+        {
+            iTween.MoveTo(this.gameObject, iTween.Hash("path", this.path.nodes.ToArray(),"speed",speed,"looptype",loopType,"movetopath",false,"easetype",iTween.EaseType.linear));
+        }
 	}
 	
 	// Update is called once per frame
