@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 
 public class GuiBuySkins : MonoBehaviour {
@@ -14,6 +14,7 @@ public class GuiBuySkins : MonoBehaviour {
         BundleDatas.turquoise = PlayerPrefs.GetInt("turquoise") == 1;
         BundleDatas.vert = PlayerPrefs.GetInt("vert") == 1;
         BundleDatas.violet = PlayerPrefs.GetInt("violet") == 1;
+        PlayerPrefs.SetString("color", "rouge");
 	}
 	
 	// Update is called once per frame
@@ -29,7 +30,7 @@ public class GuiBuySkins : MonoBehaviour {
     void OnGUI()
     {
         //Reset achat
-        if (GUI.Button(new Rect(8 * Screen.width / 10, 1 * Screen.height / 10, 2*Screen.width / 10f, Screen.height / 15f), "Réinitialiser achats"))
+        if (GUI.Button(new Rect(8 * Screen.width / 10, 1 * Screen.height / 10, 2*Screen.width / 10f, Screen.height / 15f), "RÃ©initialiser achats"))
         {
             PlayerPrefs.DeleteAll();
             ReadAchats();
@@ -42,6 +43,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/YellowTexture.unity3d", "skeleton_warrior__variant3"));
+            PlayerPrefs.SetString("color", "jaune");
         }
 
         if (BundleDatas.bleu && GUI.Button(new Rect(8 * Screen.width / 10, 3 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Bleu"))
@@ -50,6 +52,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/BlueTexture.unity3d", "skeleton_warrior__variant4"));
+            PlayerPrefs.SetString("color", "bleu");
         }
 
         if (BundleDatas.turquoise && GUI.Button(new Rect(8 * Screen.width / 10, 4 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Turquoise"))
@@ -58,6 +61,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/TurquoiseTexture.unity3d", "skeleton_warrior_variant1"));
+            PlayerPrefs.SetString("color", "turquoise");
         }
         if (BundleDatas.vert && GUI.Button(new Rect(8 * Screen.width / 10, 5 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Vert"))
         {
@@ -65,6 +69,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/GreenTexture.unity3d", "skeleton_warrior__variant5"));
+            PlayerPrefs.SetString("color", "vert");
         }
         if (BundleDatas.violet && GUI.Button(new Rect(8 * Screen.width / 10, 6 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Violet"))
         {
@@ -72,6 +77,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/PurpleTexture.unity3d", "skeleton_warrior__variant2"));
+            PlayerPrefs.SetString("color", "violet");
         }
         if (GUI.Button(new Rect(8 * Screen.width / 10, 7 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Rouge"))
         {
@@ -79,33 +85,34 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/RedTexture.unity3d", "skeleton_warrior_col_01"));
+            PlayerPrefs.SetString("color", "rouge");
         }
 
         //Buy Buttons
-        if (!BundleDatas.jaune && GUI.Button(new Rect(9 * Screen.width / 10, 2 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Déverouiller Jaune"))
+        if (!BundleDatas.jaune && GUI.Button(new Rect(9 * Screen.width / 10, 2 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "DÃ©verouiller Jaune"))
         {
             PlayerPrefs.SetInt("jaune", 1);
             BundleDatas.jaune = PlayerPrefs.GetInt("jaune") == 1;
 
         }
 
-        if (!BundleDatas.bleu && GUI.Button(new Rect(9 * Screen.width / 10, 3 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Déverouiller Bleu"))
+        if (!BundleDatas.bleu && GUI.Button(new Rect(9 * Screen.width / 10, 3 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "DÃ©verouiller Bleu"))
         {
             PlayerPrefs.SetInt("bleu", 1);
             BundleDatas.bleu = PlayerPrefs.GetInt("bleu") == 1;
         }
 
-        if (!BundleDatas.turquoise && GUI.Button(new Rect(9 * Screen.width / 10, 4 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Déverouiller Turquoise"))
+        if (!BundleDatas.turquoise && GUI.Button(new Rect(9 * Screen.width / 10, 4 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "DÃ©verouiller Turquoise"))
         {
             PlayerPrefs.SetInt("turquoise", 1);
             BundleDatas.turquoise = PlayerPrefs.GetInt("turquoise") == 1;
         }
-        if (!BundleDatas.vert && GUI.Button(new Rect(9 * Screen.width / 10, 5 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Déverouiller Vert"))
+        if (!BundleDatas.vert && GUI.Button(new Rect(9 * Screen.width / 10, 5 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "DÃ©verouiller Vert"))
         {
             PlayerPrefs.SetInt("vert", 1);
             BundleDatas.vert = PlayerPrefs.GetInt("vert") == 1;
         }
-        if (!BundleDatas.violet && GUI.Button(new Rect(9 * Screen.width / 10, 6 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Déverouiller Violet"))
+        if (!BundleDatas.violet && GUI.Button(new Rect(9 * Screen.width / 10, 6 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "DÃ©verouiller Violet"))
         {
             PlayerPrefs.SetInt("violet", 1);
             BundleDatas.violet = PlayerPrefs.GetInt("violet") == 1;

@@ -28,7 +28,7 @@ public class GuiDisplayScores : MonoBehaviour {
             foreach (var pair in scores)
             {
                 //Debug.Log(pair.Key+" "+pair.Value);
-                GUI.Label(new Rect(0, i * 25 + 50, Screen.width, 100), pair.Key + " " + pair.Value);
+                GUI.Label(new Rect(2*Screen.width/10, i * 25 + 50, Screen.width, 100), pair.Key + " " + pair.Value);
                 i++;
             }
         }
