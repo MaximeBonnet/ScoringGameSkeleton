@@ -11,18 +11,22 @@ try
 	$donnees = $req1->fetch();
 	if (!$donnees) {
 		$req2 = $bdd->prepare('INSERT INTO ExamUnity(pseudo, score) VALUES(:pseudo, :score)');
-		$req2->execute(array(
-			'pseudo' => htmlspecialchars($_GET["pseudo"]),
-			'score' => htmlspecialchars($_GET["score"])
-		));
+		if($_GET["pseudo"] != ""){
+			$req2->execute(array(
+				'pseudo' => htmlspecialchars($_GET["pseudo"]),
+				'score' => htmlspecialchars($_GET["score"])
+			));
+		}
 	} else {
 		
 		if ($donnees['score'] < $_GET['score']) {
 			$req3 = $bdd->prepare('UPDATE ExamUnity SET score = :score WHERE pseudo = :pseudo');
-			$req3->execute(array(
-				'score' => htmlspecialchars($_GET["score"]),
-				'pseudo' => htmlspecialchars($_GET["pseudo"])
-			));
+			if($_GET["pseudo"] != ""){
+				$req3->execute(array(
+					'score' => htmlspecialchars($_GET["score"]),
+					'pseudo' => htmlspecialchars($_GET["pseudo"])
+				));
+			}
 		}
 	}
 	
