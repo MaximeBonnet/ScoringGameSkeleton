@@ -7,6 +7,7 @@ public static class ScoreHandler {
 
     public static Dictionary<string, int> scores;
 
+	public static bool submited=false;
     public static IEnumerator SubmitScore(string url, string pseudo, int score)
     {
 
@@ -23,6 +24,7 @@ public static class ScoreHandler {
         else
         {
             Debug.Log("Success");
+			submited=true;
         }
 
     }

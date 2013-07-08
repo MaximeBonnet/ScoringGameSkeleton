@@ -1418,6 +1418,7 @@ MonoBehaviour:
   m_Name: 
   pv: 10
   hitFeedBack: {fileID: 100010, guid: 48d5349e2f923244bab78edaa06a532b, type: 2}
+  score: 10
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

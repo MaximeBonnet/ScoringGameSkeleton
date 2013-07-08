@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	void Start () {
 		moveCharacter=GetComponent<MoveCharacter>();
 		anim.SetLayerWeight(1,1);
+		PlayerPrefs.SetInt("score",0);
 	}
 	
 	// Update is called once per frame
@@ -33,5 +34,8 @@ public class Player : MonoBehaviour {
 			weapon.isHitting=true;
 		}
 				
+	}
+	void OnDestroy(){
+		Application.LoadLevel("GameOver");
 	}
 }

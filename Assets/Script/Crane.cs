@@ -6,7 +6,7 @@ public class Crane : MonoBehaviour {
 	GameObject target;
 	public float speed=1;
 	public GameObject skin;
-	
+	public enum IAType{simple, circle}
 	// Use this for initialization
 	void Start () {
 		target=GameObject.Find("Player");
@@ -18,6 +18,10 @@ public class Crane : MonoBehaviour {
 		distance.Normalize();
 		transform.Translate(distance.normalized*speed*Time.deltaTime);
 		CharacterLookAt(distance);
+	}
+	
+	void Simple(){
+		
 	}
 	
 	void CharacterLookAt(Vector3 pos){
