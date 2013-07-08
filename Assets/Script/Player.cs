@@ -18,9 +18,7 @@ public class Player : MonoBehaviour {
 
 		
 		AnimatorStateInfo currentBaseState=anim.GetCurrentAnimatorStateInfo(1);
-		
-		Debug.Log(currentBaseState.nameHash != Animator.StringToHash("Hit.hit"));
-		
+				
 		if(currentBaseState.nameHash != Animator.StringToHash("Hit.hit")){
 			
 			weapon.isHitting=false;
