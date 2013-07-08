@@ -1,13 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Crane.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DestroyInSec.cs">
     <Files>
-      <File FileName="Assets\Script\CharacterResources.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Player.cs" Line="21" Column="3" />
+      <File FileName="Assets\Script\CharacterResources.cs" Line="9" Column="68" />
+      <File FileName="Assets\Script\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\WeaponCollider.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Crane.cs" Line="9" Column="2" />
+      <File FileName="Assets\Script\Crane.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\GroundDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\MoveCharacter.cs" Line="19" Column="2" />
+      <File FileName="Assets\Script\MoveCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\EnemiDamage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Poper.cs" Line="20" Column="22" />
+      <File FileName="Assets\Script\DestroyInSec.cs" Line="8" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
