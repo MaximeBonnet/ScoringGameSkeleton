@@ -56,6 +56,6 @@ public class Player : MonoBehaviour {
     }
 	
 	void OnGUI(){
-		GUI.Label(new Rect(0,50,200,50), PlayerPrefs.GetInt("score").ToString());
+		GUI.Label(new Rect(10f,2*Screen.height/15,200,50), PlayerPrefs.GetInt("score").ToString());
 	}
 }
