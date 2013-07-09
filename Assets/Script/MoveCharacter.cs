@@ -44,7 +44,7 @@ public class MoveCharacter : MonoBehaviour {
 	//UpdateMove?
 	public void UpdateMoveManager(float x, bool jump) {
 		
-		moveDirection = new Vector3(x, 0, 0).normalized;
+		moveDirection = new Vector3(x, 0, 0);//.normalized;
 		anim.SetFloat("move", x);
 	
 		if (groundDetecion.IsGrouded()){
