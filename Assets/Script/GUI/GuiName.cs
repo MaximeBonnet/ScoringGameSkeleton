@@ -16,8 +16,8 @@ public class GuiName : MonoBehaviour {
 	}
 	
 	void OnGUI () {
-		name=GUI.TextField(new Rect(Screen.width/2-250,0, 250, 25), name);
-		if(GUI.Button(new Rect(Screen.width/2,0, 50, 25), "ok")&&name!=""){
+		name=GUI.TextField(new Rect(Screen.width/2-250,Screen.height-25, 250, 25), name);
+		if(GUI.Button(new Rect(Screen.width/2,Screen.height-25, 50, 25), "ok")&&name!=""){
 			PlayerPrefs.SetString("name", name);
 			Application.LoadLevel("Game");
 		}
