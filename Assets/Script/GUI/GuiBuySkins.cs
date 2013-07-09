@@ -43,7 +43,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/YellowTexture.unity3d", "skeleton_warrior__variant3"));
-            PlayerPrefs.SetString("color", "jaune");
+            //PlayerPrefs.SetString("color", "jaune");
         }
 
         if (BundleDatas.bleu && GUI.Button(new Rect(8 * Screen.width / 10, 3 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Bleu"))
@@ -52,7 +52,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/BlueTexture.unity3d", "skeleton_warrior__variant4"));
-            PlayerPrefs.SetString("color", "bleu");
+            //PlayerPrefs.SetString("color", "bleu");
         }
 
         if (BundleDatas.turquoise && GUI.Button(new Rect(8 * Screen.width / 10, 4 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Turquoise"))
@@ -61,7 +61,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/TurquoiseTexture.unity3d", "skeleton_warrior_variant1"));
-            PlayerPrefs.SetString("color", "turquoise");
+            //PlayerPrefs.SetString("color", "turquoise");
         }
         if (BundleDatas.vert && GUI.Button(new Rect(8 * Screen.width / 10, 5 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Vert"))
         {
@@ -69,7 +69,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/GreenTexture.unity3d", "skeleton_warrior__variant5"));
-            PlayerPrefs.SetString("color", "vert");
+            //PlayerPrefs.SetString("color", "vert");
         }
         if (BundleDatas.violet && GUI.Button(new Rect(8 * Screen.width / 10, 6 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Violet"))
         {
@@ -77,7 +77,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/PurpleTexture.unity3d", "skeleton_warrior__variant2"));
-            PlayerPrefs.SetString("color", "violet");
+            //PlayerPrefs.SetString("color", "violet");
         }
         if (GUI.Button(new Rect(8 * Screen.width / 10, 7 * Screen.height / 10, Screen.width / 10f, Screen.height / 15f), "Rouge"))
         {
@@ -85,7 +85,7 @@ public class GuiBuySkins : MonoBehaviour {
             textureChanged = false;
             AssetBundleRetriever.texture = null;
             StartCoroutine(AssetBundleRetriever.RetrieveTexture("http://romainpedra.fr/games/ExamUnity/RedTexture.unity3d", "skeleton_warrior_col_01"));
-            PlayerPrefs.SetString("color", "rouge");
+            //PlayerPrefs.SetString("color", "rouge");
         }
 
         //Buy Buttons

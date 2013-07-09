@@ -1600,6 +1600,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400002, guid: 4257bbb83fb7d4c4dadd28929a6b6ae0, type: 2}
+      propertyPath: partPlayer.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 4257bbb83fb7d4c4dadd28929a6b6ae0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.05455828
@@ -1660,6 +1664,14 @@ Prefab:
       propertyPath: orthographic size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4257bbb83fb7d4c4dadd28929a6b6ae0, type: 2}
+      propertyPath: partPlayer.Array.data[0]
+      value: 
+      objectReference: {fileID: 913786477}
+    - target: {fileID: 11400002, guid: 4257bbb83fb7d4c4dadd28929a6b6ae0, type: 2}
+      propertyPath: partPlayer.Array.data[1]
+      value: 
+      objectReference: {fileID: 1727691300}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4257bbb83fb7d4c4dadd28929a6b6ae0, type: 2}
   m_RootGameObject: {fileID: 897742063}
@@ -2077,6 +2089,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0780e32d0e863b647be24b61fd3ed7a1, type: 3}
   m_Name: 
+  partPlayer:
+  - {fileID: 913786477}
+  - {fileID: 1727691300}
   weapon: {fileID: 1643732279}
   trail: {fileID: 1643732283}
   anim: {fileID: 320708879}

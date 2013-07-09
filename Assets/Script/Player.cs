@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
+
+    public GameObject[] partPlayer;
 	MoveCharacter moveCharacter;
 	public WeaponCollider weapon;
 	public MeleeWeaponTrail trail;
@@ -12,6 +14,7 @@ public class Player : MonoBehaviour {
 		moveCharacter=GetComponent<MoveCharacter>();
 		anim.SetLayerWeight(1,1);
 		PlayerPrefs.SetInt("score",0);
+        ChangeTexture();
 	}
 	
 	// Update is called once per frame
@@ -40,4 +43,15 @@ public class Player : MonoBehaviour {
 	void OnDestroy(){
 		Application.LoadLevel("GameOver");
 	}
+
+    void ChangeTexture()
+    {
+        if (AssetBundleRetriever.texture != null)
+        {
+            foreach (GameObject part in partPlayer)
+            {
+                part.renderer.material.SetTexture("_MainTex", AssetBundleRetriever.texture);
+            }
+        }
+    }
 }
