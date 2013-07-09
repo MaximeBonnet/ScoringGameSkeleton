@@ -27,6 +27,7 @@ public static class AssetBundleRetriever {
                 Debug.Log("Loaded");
                 AssetBundle bundle = www.assetBundle;
                 texture = (Texture)bundle.Load(textureName,typeof(Texture));
+                bundle.Unload(false);
             }
         }
     }

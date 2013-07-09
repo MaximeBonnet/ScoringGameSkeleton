@@ -231,18 +231,14 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_LocalTransitions:
     data:
-      first: {fileID: 110280560}
-      second:
-      - {fileID: 110133541}
-    data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110171261}
-  m_OrderedTransitions:
     data:
       first: {fileID: 110280560}
       second:
       - {fileID: 110133541}
+  m_OrderedTransitions:
     data:
       first: {fileID: 0}
       second: []
@@ -250,6 +246,10 @@ StateMachine:
       first: {fileID: 110200000}
       second:
       - {fileID: 110171261}
+    data:
+      first: {fileID: 110280560}
+      second:
+      - {fileID: 110133541}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
