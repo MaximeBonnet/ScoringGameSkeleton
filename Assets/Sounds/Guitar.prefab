@@ -2004,6 +2004,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a0b08ec8cbd45a43840870bb6c32b83, type: 3}
   m_Name: 
+  isPlaying: 0
   tempoSec: 1
   note1:
     name: 1
@@ -2036,6 +2037,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a0b08ec8cbd45a43840870bb6c32b83, type: 3}
   m_Name: 
+  isPlaying: 0
   tempoSec: 1
   note1:
     name: 1
@@ -2068,6 +2070,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a0b08ec8cbd45a43840870bb6c32b83, type: 3}
   m_Name: 
+  isPlaying: 0
   tempoSec: 1
   note1:
     name: 1
