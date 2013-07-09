@@ -54,4 +54,8 @@ public class Player : MonoBehaviour {
             }
         }
     }
+	
+	void OnGUI(){
+		GUI.Label(new Rect(0,50,200,50), PlayerPrefs.GetInt("score").ToString());
+	}
 }

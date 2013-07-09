@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Crane.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PvManager.cs">
     <Files>
+      <File FileName="Assets\Script\PvManager.cs" Line="4" Column="14" />
       <File FileName="Assets\Script\MeleeWeaponTrail.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Crane.cs" Line="66" Column="1" />
       <File FileName="Assets\Script\GUI\GuiName.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\NotePlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\MoveCharacter.cs" Line="51" Column="30" />
+      <File FileName="Assets\Script\MoveCharacter.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\CharacterResources.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\WeaponCollider.cs" Line="31" Column="16" />
+      <File FileName="Assets\Script\WeaponCollider.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="Crane.cs" selected="True" />
+                <Node name="PvManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
