@@ -23,7 +23,8 @@ public class GroundDetection : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other){
-		if(other.tag!="Trigger"){
+		if(other.tag!="Trigger"
+			&&other.gameObject.layer!=LayerMask.NameToLayer("Enemi")){
 			collidedThings.Add(other);
 		}
 	}
@@ -31,7 +32,8 @@ public class GroundDetection : MonoBehaviour {
 
 	
 	void OnTriggerExit(Collider other){
-		if(other.tag!="Trigger"){
+		if(other.tag!="Trigger"
+			&&other.gameObject.layer!=LayerMask.NameToLayer("Enemi")){
 			collidedThings.Remove(other);			
 		}
 	}
