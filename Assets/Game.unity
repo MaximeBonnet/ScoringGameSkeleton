@@ -84,7 +84,6 @@ GameObject:
   - 4: {fileID: 64502052}
   - 33: {fileID: 64502055}
   - 23: {fileID: 64502054}
-  - 111: {fileID: 64502053}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -104,24 +103,6 @@ Transform:
   m_Children:
   - {fileID: 224057638}
   m_Father: {fileID: 0}
---- !u!111 &64502053
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 2104201194}
-  m_GameObject: {fileID: 64502051}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &64502054
 Renderer:
   m_ObjectHideFlags: 0
@@ -925,7 +906,6 @@ GameObject:
   - 4: {fileID: 401674719}
   - 33: {fileID: 401674722}
   - 23: {fileID: 401674721}
-  - 111: {fileID: 401674720}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -945,24 +925,6 @@ Transform:
   m_Children:
   - {fileID: 1619024261}
   m_Father: {fileID: 0}
---- !u!111 &401674720
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 1767664714}
-  m_GameObject: {fileID: 401674718}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &401674721
 Renderer:
   m_ObjectHideFlags: 0
@@ -2508,7 +2470,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 1410890718}
   m_IsPrefabParent: 0
@@ -2568,7 +2531,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 2141648926}
   m_IsPrefabParent: 0
@@ -2683,7 +2647,6 @@ GameObject:
   - 4: {fileID: 1184677494}
   - 33: {fileID: 1184677497}
   - 23: {fileID: 1184677496}
-  - 111: {fileID: 1184677495}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -2703,24 +2666,6 @@ Transform:
   m_Children:
   - {fileID: 1352333619}
   m_Father: {fileID: 0}
---- !u!111 &1184677495
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 2077771268}
-  m_GameObject: {fileID: 1184677493}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &1184677496
 Renderer:
   m_ObjectHideFlags: 0
@@ -3172,7 +3117,6 @@ GameObject:
   - 4: {fileID: 1410890719}
   - 33: {fileID: 1410890722}
   - 23: {fileID: 1410890721}
-  - 111: {fileID: 1410890720}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -3192,24 +3136,6 @@ Transform:
   m_Children:
   - {fileID: 1299820143}
   m_Father: {fileID: 0}
---- !u!111 &1410890720
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 1161035633}
-  m_GameObject: {fileID: 1410890718}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &1410890721
 Renderer:
   m_ObjectHideFlags: 0
@@ -4220,7 +4146,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 401674718}
   m_IsPrefabParent: 0
@@ -4473,7 +4400,6 @@ GameObject:
   - 4: {fileID: 1856790478}
   - 33: {fileID: 1856790481}
   - 23: {fileID: 1856790480}
-  - 111: {fileID: 1856790479}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -4493,24 +4419,6 @@ Transform:
   m_Children:
   - {fileID: 499453969}
   m_Father: {fileID: 0}
---- !u!111 &1856790479
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 2065711237}
-  m_GameObject: {fileID: 1856790477}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &1856790480
 Renderer:
   m_ObjectHideFlags: 0
@@ -5097,7 +5005,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 1856790477}
   m_IsPrefabParent: 0
@@ -5184,7 +5093,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 1184677493}
   m_IsPrefabParent: 0
@@ -5244,7 +5154,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1, type: 3}
   m_RootGameObject: {fileID: 64502051}
   m_IsPrefabParent: 0
@@ -5313,7 +5224,6 @@ GameObject:
   - 4: {fileID: 2141648927}
   - 33: {fileID: 2141648930}
   - 23: {fileID: 2141648929}
-  - 111: {fileID: 2141648928}
   m_Layer: 10
   m_Name: fence_segment_03_cemetery
   m_TagString: Untagged
@@ -5333,24 +5243,6 @@ Transform:
   m_Children:
   - {fileID: 2145696628}
   m_Father: {fileID: 0}
---- !u!111 &2141648928
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 48f3d91470bcda0488bd0c4aa00ce9e1,
-    type: 3}
-  m_PrefabInternal: {fileID: 1162685110}
-  m_GameObject: {fileID: 2141648926}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!23 &2141648929
 Renderer:
   m_ObjectHideFlags: 0
